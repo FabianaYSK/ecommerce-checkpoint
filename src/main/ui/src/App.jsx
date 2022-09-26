@@ -8,6 +8,8 @@ import Categories from "./pages/Categories";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 
+// import Category from "./components/Category";
+
 export default function App() {
   return (
     <div className="container">
@@ -22,7 +24,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
+            {/* <Route path="/products/:id" element={<Product />} /> */}
             <Route path="/categories" element={<Categories />} />
+            {/*  <Route path="/categories/:id" element={<Category />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>

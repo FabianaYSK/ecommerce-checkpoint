@@ -1,7 +1,10 @@
-// import {useParams} from "react-router-dom";
+import React from "react";
 import Pagination from "react-bootstrap/Pagination";
 
-export default function Products() {
+// import { Link } from "react-router-dom";
+// import { Card } from "react-bootstrap";
+
+export default function Products({ product }) {
   let active = 1;
   let items = [];
   for (let number = 1; number <= 2; number++) {
@@ -12,17 +15,13 @@ export default function Products() {
     );
   }
 
-  // const {idProduct} = useParams();
-
   return (
     <>
       <h1>Products</h1>
-      {/*<h2> {idProduct}</h2>*/}
-
+      
       <div>
-      <Pagination>{items}</Pagination>
+        <Pagination>{items}</Pagination>
       </div>
     </>
   );
 }
-
